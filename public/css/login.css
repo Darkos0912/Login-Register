@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202020;
+}
+
+.main-login{
+    padding: 0 50px;
+}
+
+.div-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    border: solid 5px #9bcf29;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.div-login label{
+    padding-bottom: 10px;
+}
+
+.div-login input{
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.div-email{
+    padding: 15px 0;
+}
+
+.tit-login{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.correo-user, .password, .container-button, .enlace-registro{
+    padding: 15px 0;
+}
+
+.correo-user{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.password{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.enlace-registro{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.enlace-registro a, .password a{
+    text-decoration: none;
+    color: #9bcf29;
+}
+
+.enlace-registro a{
+    padding-left: 5px;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+}
+
+.container-button button{
+    font-size: 20px;
+    padding: 2px 25px;
+    background-color: #9bcf29;
+    border-radius: 5px;
+    color: #202020;
+}
+
+/* Efectos */
+
+
+.div-login a:hover{
+    color: white;
+}
+
+.container-button button:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.div-login form input:focus{
+    border: solid 3px #9bcf29;
+    outline: none;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+    .main-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-login{
+        width: 50%;
+    }
+}
