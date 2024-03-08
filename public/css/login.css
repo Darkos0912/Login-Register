@@ -6,6 +6,11 @@
 
 body{
     background-color: #202020;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-login{
@@ -114,9 +119,5 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .div-login{
-        width: 50%;
     }
 }
