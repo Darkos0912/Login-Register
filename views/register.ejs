@@ -20,7 +20,7 @@
                     <% if(locals.errors && errors.name){%>
                         <div>
                             <i>
-                                <%= errors.name.msg%>
+                                *<%= errors.name.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -32,7 +32,7 @@
                     <% if(locals.errors && errors.lastname){%>
                         <div>
                             <i>
-                                <%= errors.lastname.msg%>
+                                *<%= errors.lastname.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -44,7 +44,7 @@
                     <%if(locals.errors && errors.username){%>
                         <div>
                             <i>
-                                <%= errors.username.msg%>
+                                *<%= errors.username.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -56,7 +56,7 @@
                     <%if (locals.errors && errors.email){%>
                         <div>
                             <i>
-                                <%=errors.email.msg%>
+                                *<%=errors.email.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -67,7 +67,7 @@
                     <%if(locals.errors && errors.password){%>
                         <div>
                             <i>
-                                <%= errors.password.msg%>
+                                *<%= errors.password.msg%>
                             </i>
                         </div>
                         <%}%>
@@ -79,7 +79,7 @@
                     <%if (locals.errors && errors.passwordVerify){%>
                         <div>
                             <i>
-                                <%=errors.passwordVerify.msg%>
+                                *<%=errors.passwordVerify.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -95,7 +95,7 @@
                     <%if (locals.errors && errors.gender){%>
                         <div>
                             <i>
-                                <%=errors.gender.msg%>
+                                *<%=errors.gender.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -111,7 +111,7 @@
                     <%if (locals.errors && errors.age){%>
                         <div>
                             <i>
-                                <%=errors.age.msg%>
+                                *<%=errors.age.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -123,7 +123,7 @@
                     <%if (locals.errors && errors.address){%>
                         <div>
                             <i>
-                                <%=errors.address.msg%>
+                                *<%=errors.address.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -138,7 +138,7 @@
                     <%if (locals.errors && errors.role){%>
                         <div>
                             <i>
-                                <%=errors.role.msg%>
+                                *<%=errors.role.msg%>
                             </i>
                         </div>
                     <%}%>
@@ -150,6 +150,9 @@
                     <input type="reset" value="Borrar">
                 </div>
             </form>
+            <div class="div-toLogin">
+                <a href="/users/login" class="link"> Ir al Login >>></a>
+            </div>
         </div>
     </main>
 </body>

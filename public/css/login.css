@@ -96,13 +96,12 @@ body{
 /* Efectos */
 
 
-.div-login a:hover{
-    color: white;
-}
+
 
 .container-button button:hover{
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .div-login form input:focus{
@@ -110,8 +109,25 @@ body{
     outline: none;
 }
 
+.div-refresh{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+}
+.link{
+    color: #9bcf29;
+    text-decoration: none;
+}
 
+.link:hover{
+    filter: brightness(120%);
+}
 
+i{
+    color:#9bcf29;
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 768px){
 

@@ -12,9 +12,13 @@ const users = {
         res.redirect("login");
     },
     profile: (req,res) => {
-        res.render("profile");
+
+        const userLogged = req.session.userLogged;
+
+        res.render("profile", {data: userLogged});
     },
     logout: (req,res) => {
+        req.session.destroy();
         res.redirect("login");
     }
 }

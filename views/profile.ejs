@@ -11,13 +11,13 @@
 <body>
     <main>
         <div class="profile-container">
-            <img src="/img/" alt="">
+            <img src="/img/<%= data.image %>" alt="">
             
             <div class="profile">
-                <h2> Nombre: Esteban Ezequiel</h2>
-                <h2> Apellido: Villanueva</h2>
-                <h2> Email: villanuevadarkos@gmail.com</h2>
-                <h2> Rol del Usuario: Administrador</h2>
+                <h2> Nombre: <%= data.name%></h2>
+                <h2> Apellido:   <%=data.lastname%></h2>
+                <h2> Email:   <%=data.email%></h2>
+                <h2> Rol del Usuario:   <%=data.role%></h2>
             </div>
             <div class="buton-profile">
                 <form action="/users/logout" method="get">

@@ -26,7 +26,7 @@ const usersController = {
                     meta: {
                         status: "200",
                         count: "1",
-                        url: `/api/${id}`
+                        url: `/api/users/${id}`
                     },
 
                     users: user
