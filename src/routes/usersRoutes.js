@@ -1,6 +1,7 @@
 const express = require("express");
 const route = express.Router();
 const usersControllers = require("../controllers/usersControllers");
+
 const upload = require("../middlewares/multer");
 const {arrRegister, validateRegister} = require("../middlewares/validateRegister");
 const {arrLogin, validateLogin} = require("../middlewares/validateLogin");

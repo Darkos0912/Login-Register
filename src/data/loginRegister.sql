@@ -11,8 +11,6 @@ CREATE TABLE `USERS` (
    `gender` VARCHAR(30) NOT NULL,
    `image` VARCHAR(255) NOT NULL,
    `age` VARCHAR(4) NOT NULL,
-   `address` VARCHAR(255) NOT NULL,
-   `role` VARCHAR(100) NOT NULL,
-   PRIMARY KEY (`id`)
+   `address` VARCHAR(255) NOT NULL
 );
 

@@ -34,9 +34,6 @@ module.exports = (sequelize, dataTypes) => {
         },
         address: {
             type: dataTypes.STRING(255)
-        },
-        role: {
-            type: dataTypes.STRING(100)
         }
     };
 

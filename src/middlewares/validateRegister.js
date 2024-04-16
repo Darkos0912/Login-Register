@@ -10,7 +10,6 @@ const arrRegister = [
     body('password').notEmpty().withMessage('Debe ingresar una contraseña').bail().isLength({ min: 8, max: 12 }).withMessage("*Debe tener entre 8 y 12 caracteres"),
     body('passwordVerify').notEmpty().withMessage('Debe ingresar la contraseña nuevamente').bail().isLength({ min: 8, max: 12 }),
     body('gender').notEmpty().withMessage('Debe seleccionar un género'),
-    body('role').notEmpty().withMessage('Debe ingresar un rol'),
     body('age').notEmpty().withMessage('Debe ingresar la edad'),
     body('address').notEmpty().withMessage('Debe ingresar el domicilio'),
 ];
@@ -18,7 +17,7 @@ const arrRegister = [
 const validateRegister = async (req, res, next) => {
     const errors = validationResult(req);
     req.body.image = req.file;
-    const { name, lastname, username, email, password, passwordVerify, image, gender, age, address, role } = req.body;
+    const { name, lastname, username, email, password, passwordVerify, image, gender, age, address } = req.body;
 
 
 
@@ -68,8 +67,7 @@ const validateRegister = async (req, res, next) => {
                     gender: gender,
                     image: imageExist(image),
                     age: age,
-                    address: address,
-                    role: role
+                    address: address
                 })
 
                 next();
